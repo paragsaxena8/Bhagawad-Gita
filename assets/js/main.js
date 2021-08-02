@@ -12,7 +12,7 @@
     $(".flipbook .double").scissor();
     var selectDouble = document.querySelectorAll(".flipbook .double");
     console.log("🚀 ~ loadApp ~ selectDouble", selectDouble);
-    $(".flipbook .double").css("background-color", "#F7BD2F");
+    // $(".flipbook .double").css("background-color", "#F7BD2F");
     fetch("https://bhagavad-gita3.p.rapidapi.com/v2/chapters/", {
       method: "GET",
       headers: {
@@ -33,8 +33,7 @@
           selectDouble[i].appendChild(heading_en);
           selectDouble[i].appendChild(summary);
           selectDouble[i].style.marginLeft = "5px";
-          selectDouble[i].style.padding = "15px 10px 0px 10px";
-          // console.log("🚀 ~ .then ~ selectDouble[i].html", selectDouble[i]);
+          selectDouble[i].style.padding = "15px 10px 10px 10px";
         }
       })
       .catch((err) => {
