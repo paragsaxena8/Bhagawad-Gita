@@ -8,14 +8,14 @@ body {
   background-color: #007fff;
 }
 
-@media screen and (orientation: portrait) {
+/* @media screen and (orientation: portrait) {
  body{
   transform: rotate(-90deg);
   position: absolute;
   top: 50%;
   left: 50%;
  }
-}
+} */
 
 .flipbook-viewport {
   overflow: hidden;
