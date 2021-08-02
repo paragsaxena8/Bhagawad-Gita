@@ -6,13 +6,15 @@ body {
   font-family: "Kalam", cursive;
   font-size: 14px;
   background-color: #007fff;
-  margin: 0;
-  padding: 0;
-  /* background: linear-gradient(
-      rgba(255, 255, 255, 0.9),
-      rgba(255, 255, 255, 0.9)
-    ),
-    url(https://s-media-cache-ak0.pinimg.com/originals/30/b3/a9/30b3a9b27032a6b9c1d7a69d2400fb9e.jpg); */
+}
+
+@media screen and (orientation: portrait) {
+ body{
+  transform: rotate(-90deg);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+ }
 }
 
 .flipbook-viewport {
