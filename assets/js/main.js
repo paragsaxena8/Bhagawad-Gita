@@ -23,13 +23,17 @@
       .then((response) => response.json())
       .then((data) => {
         for (i = 0; i < selectDouble.length; i++) {
+          var chapter_n = document.createElement("h2");
+          chapter_n.className = 'text-center';
           var heading_en = document.createElement("h3");
           var heading = document.createElement("span");
           var summary = document.createElement("p");
+          chapter_n.innerHTML = data[i]["chapter_number"];
           heading_en.innerHTML = data[i]["name_meaning"];
           heading.innerHTML = ` (${data[i].name})`;
           summary.innerHTML = data[i]["chapter_summary"];
           heading_en.appendChild(heading);
+          selectDouble[i].appendChild(chapter_n);
           selectDouble[i].appendChild(heading_en);
           selectDouble[i].appendChild(summary);
           selectDouble[i].style.marginLeft = "5px";

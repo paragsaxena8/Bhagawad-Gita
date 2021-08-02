@@ -1,11 +1,31 @@
 /* Basic sample */
 @import url("https://fonts.googleapis.com/css2?family=Kalam&display=swap");
 
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
 body {
   overflow: hidden;
   font-family: "Kalam", cursive;
   font-size: 14px;
   background-color: #007fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 /* @media screen and (orientation: portrait) {
@@ -98,4 +118,24 @@ body {
 
 .cover-font {
   font-size: 1.7rem;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0.3125rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #eee;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #7f7f7f;
 }
