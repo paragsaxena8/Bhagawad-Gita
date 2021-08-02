@@ -46,6 +46,16 @@ p {
 @media (orientation: landscape) {
   .flipbook-viewport{
     margin: 1rem;
+    zoom: 0%;
+  }
+}
+
+@media (orientation: portrait) {
+  .flipbook-viewport{
+    transform: rotate(-90deg);
+    overflow: initial!important;
+    position: absolute;
+    width: 100vw;
   }
 }
 
