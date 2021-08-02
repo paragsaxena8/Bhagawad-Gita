@@ -43,6 +43,12 @@ p {
   height: 100%;
 }
 
+@media (orientation: landscape) {
+  .flipbook-viewport{
+    margin: 1rem;
+  }
+}
+
 .flipbook-viewport .container {
   position: absolute;
   top: 50%;
@@ -139,3 +145,9 @@ p {
 ::-webkit-scrollbar-thumb:hover {
   background: #7f7f7f;
 }
+
+.social-icon {
+  display: flex;
+  justify-content: center;
+}
+
